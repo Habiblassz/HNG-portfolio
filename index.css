@@ -93,7 +93,7 @@ nav ul li a:hover {
 }
 
 .profile-picture img:hover {
-	transform: scale(1.01);
+	transform: scale(0.95);
 	box-shadow: 0 0 20px var(--hover-color);
 }
 
@@ -142,12 +142,6 @@ nav ul li a:hover {
 .social-links a:hover {
 	color: var(--hover-color);
 	transform: translateY(-5px);
-}
-
-.current-time {
-	font-size: 0.9rem;
-	margin-top: 1rem;
-	animation: tick 1s infinite;
 }
 
 /* Goals Section */
@@ -222,21 +216,11 @@ footer a:hover {
 @keyframes fadeIn {
 	from {
 		opacity: 0;
-		transform: translateY(20px);
+		transform: translateY(30px);
 	}
 	to {
 		opacity: 1;
 		transform: translateY(0);
-	}
-}
-
-@keyframes tick {
-	0%,
-	100% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0.5;
 	}
 }
 
