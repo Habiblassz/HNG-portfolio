@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Habib Lawal - Profile Card</title>
+		<link rel="stylesheet" href="index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&family=Poppins:wght@300;400;500;600&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="left main-color">portfolio</div>
+				<div class="right">
+					<ul>
+						<li><a href="#" aria-label="Home">Home</a></li>
+						<li><a href="#" class="mobile" aria-label="About">About</a></li>
+						<li><a href="#" class="mobile" aria-label="Contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="profile-container">
+				<!-- Profile Section -->
+				<div class="profile-card">
+					<div class="profile-picture" data-testid="profilePicture">
+						<img
+							src="main.jpg"
+							alt="Profile Picture"
+							data-testid="slackProfilePicture" />
+					</div>
+					<div class="profile-details">
+						<h1 data-testid="fullName">Habib Lawal</h1>
+						<p class="job-title" data-testid="jobTitle">Front-End Developer</p>
+						<p class="short-bio" data-testid="shortBio">
+							Hello, I'm a front-end developer with 2+ years of experience,
+							specializing in creating custom, pixel-perfect websites with clean
+							code and interactive animations.
+						</p>
+						<p class="current-location" data-testid="currentLocation">
+							📍 Kwara state, Nigeria
+						</p>
+						<p class="email-address" data-testid="emailAddress">
+							📧 habiblawaltemitope@gmail.com
+						</p>
+						<div class="social-links" data-testid="socialLinks">
+							<a href="#" aria-label="Twitter"
+								><i class="fa-brands fa-twitter"></i
+							></a>
+							<a href="#" aria-label="GitHub"
+								><i class="fa-brands fa-github"></i
+							></a>
+							<a href="#" aria-label="LinkedIn"
+								><i class="fa-brands fa-linkedin"></i
+							></a>
+						</div>
+						<p class="current-time" data-testid="currentTimeUTC"></p>
+					</div>
+				</div>
+
+				<!-- Goals Section -->
+				<div class="goals-section">
+					<h2>My Goals for the Next 2 Years</h2>
+					<div class="goals-grid">
+						<div class="goal-card">
+							<i class="fa-solid fa-briefcase"></i>
+							<h3>Build a Solid Portfolio</h3>
+							<p>Create a portfolio that showcases my skills and projects.</p>
+						</div>
+						<div class="goal-card">
+							<i class="fa-brands fa-square-git"></i>
+							<h3>Master Version Control</h3>
+							<p>
+								Become proficient in Git and GitHub for efficient collaboration.
+							</p>
+						</div>
+						<div class="goal-card">
+							<i class="fa-solid fa-database"></i>
+							<h3>Gain Backend Knowledge</h3>
+							<p>
+								Learn backend technologies to become a full-stack developer.
+							</p>
+						</div>
+						<div class="goal-card">
+							<i class="fa-solid fa-lock"></i>
+							<h3>Understand Web Security</h3>
+							<p>Learn best practices for securing web applications.</p>
+						</div>
+						<!-- <div class="goal-card">
+							<i class="fa-solid fa-list-check"></i>
+							<h3>Work on Real-World Projects</h3>
+							<p>Collaborate on projects that solve real-world problems.</p>
+						</div>
+						<div class="goal-card">
+							<i class="fa-solid fa-globe"></i>
+							<h3>Network and Collaborate</h3>
+							<p>
+								Connect with other developers and contribute to open-source
+								projects.
+							</p>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>
+				Created by <span data-testid="slackDisplayName">Habib Lawal</span> |
+				<span data-testid="slackEmail">habiblawaltemitope@gmail.com</span>
+			</p>
+			<p>
+				<a href="https://www.hng.tech/learn" data-testid="hnglink">HNG Tech</a>
+				|
+				<a href="https://www.keyword.dog" data-testid="keywordLink">Keyword</a>
+				|
+				<a href="https://webscrapingsite.com" data-testid="scrapeanyweb.site"
+					>Scrape Any Link</a
+				>
+			</p>
+			<p>
+				Today is <span class="day" data-testid="currentDay"></span> and the
+				current time is
+				<span class="time" data-testid="currentTimeUTC"></span> (UTC).
+			</p>
+		</footer>
+		<script src="index.js"></script>
+	</body>
+</html>
